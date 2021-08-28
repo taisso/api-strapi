@@ -1,3 +1,3 @@
-# Strapi application
+# Aplicação nodejs usando o stripe
 
-A quick description of your strapi application
+
