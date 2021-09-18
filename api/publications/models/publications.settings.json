@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publications",
+  "info": {
+    "name": "Publications"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "helping": {
+      "type": "integer",
+      "required": true
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "goal": {
+      "type": "float",
+      "required": true
+    },
+    "bankAccount": {
+      "type": "string",
+      "required": true
+    },
+    "expirationDate": {
+      "required": false,
+      "type": "date"
+    }
+  }
+}
