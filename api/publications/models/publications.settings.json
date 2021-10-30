@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "publications",
   "info": {
-    "name": "Publications"
+    "name": "Publications",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -49,6 +50,18 @@
     "expirationDate": {
       "required": false,
       "type": "date"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "publications"
+    },
+    "isClosed": {
+      "type": "boolean"
+    },
+    "donates": {
+      "via": "publication",
+      "collection": "donate"
     }
   }
 }

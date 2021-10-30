@@ -1253,6 +1253,106 @@
           },
           "cpf": {
             "type": "string"
+          },
+          "publications": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "Title",
+                "category",
+                "helping",
+                "goal",
+                "bankAccount"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "helping": {
+                  "type": "integer"
+                },
+                "picture": {
+                  "type": "string"
+                },
+                "goal": {
+                  "type": "number"
+                },
+                "bankAccount": {
+                  "type": "string"
+                },
+                "expirationDate": {
+                  "type": "string"
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "isClosed": {
+                  "type": "boolean"
+                },
+                "donates": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "donates": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "number"
+                },
+                "publication": {
+                  "type": "string"
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "sendDate": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1297,6 +1397,18 @@
           },
           "cpf": {
             "type": "string"
+          },
+          "publications": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "donates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"

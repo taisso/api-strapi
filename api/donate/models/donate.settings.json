@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donates",
+  "info": {
+    "name": "donate"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "text"
+    },
+    "value": {
+      "type": "float"
+    },
+    "publication": {
+      "model": "publications",
+      "via": "donates"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "donates"
+    },
+    "sendDate": {
+      "type": "date"
+    }
+  }
+}

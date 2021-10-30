@@ -61,6 +61,14 @@
     },
     "cpf": {
       "type": "string"
+    },
+    "publications": {
+      "via": "users_permissions_user",
+      "collection": "publications"
+    },
+    "donates": {
+      "via": "users_permissions_user",
+      "collection": "donate"
     }
   }
 }
